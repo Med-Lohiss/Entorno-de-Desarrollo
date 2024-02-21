@@ -1,14 +1,14 @@
 package es.iessoterohernandez.daw.endes.EjerciciosJunit;
 
 import static org.junit.Assert.*;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.Test;
 
 public class AccountTest {
 
     private Account acc;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         acc = new Account("Juan Perez", 123456789, 1000);
     }
